@@ -9,39 +9,29 @@ import {FaBriefcase} from 'react-icons/fa'
 import { useState } from 'react'
 
 const Nav = () => {
-  const [activeNow,setActiveNow] = useState('#')
+  const [activeNow,setActiveNow] = useState('#header')
   const [data,setData] = useState(0)
 
   const po = ()=>{
-    var temp = document.getElementById('header')
-    var temp1 = document.getElementById('about')
-    var temp2 = document.getElementById('experience')
-    var temp3 = document.getElementById('services')
-    var temp4 = document.getElementById('portfolio')
-    var temp5 = document.getElementById('contact')
-
-    const position = temp.offsetTop-128
-    const position1 = temp1.offsetTop-128
-    const position2 = temp2.offsetTop-128
-    const position3 = temp3.offsetTop-128
-    const position4 = temp4.offsetTop-128
-    const position5 = temp5.offsetTop-128
-
-    let y = window.pageYOffset
+    let y = window.pageYOffset        
     setData(y)
+    const arr = ['portfolio','header','about','experience','services','contact']
+    let position =  arr.map((item)=>{
+      let of=document.getElementById(item).offsetTop
+      let t=document.getElementById(item).getBoundingClientRect().height
+      return(
+        {
+          of:of,
+          h:of+t,
+          item
+        }
+      )
+    })
 
-    if(y>=0&&y<position1){
-      return setActiveNow("#")
-    }else if(y>position1&&y<position2){
-      return setActiveNow("#about")
-    }else if(y>position2&&y<position3){
-      return setActiveNow("#experience")
-    }else if(y>position3&&y<position4){
-      return setActiveNow("#services")
-    }else if(y>position4&&y<position5){
-      return setActiveNow("#portfolio")
-    }else{
-      return setActiveNow("#contact")
+    for(let i=0;i<position.length;i++){
+      if((y>=position[i].of)&&y<=(position[i].h)){
+        return setActiveNow('#'+position[i].item)
+      }
     }
   }
   useEffect(()=>{   
@@ -49,7 +39,7 @@ const Nav = () => {
   },[data])
   return (
     <nav>
-      <a href="#" className={activeNow==='#'?'active':''}><AiOutlineHome/></a>
+      <a href="#" className={activeNow==='#header'?'active':''}><AiOutlineHome/></a>
       <a href="#about" className={activeNow==='#about'?'active':''}><AiOutlineUser/></a>
       <a href="#experience" className={activeNow==='#experience'?'active':''}><BiBook/></a>
       <a href="#services"  className={activeNow==='#services'?'active':''}><RiServiceLine/></a>
