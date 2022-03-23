@@ -40,8 +40,17 @@ body{
     background-color: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(./assets/bg-texture.png);
-    
+    background-image: url(./assets/bg-texture.png);    
+}
+
+#hash{
+    color: var(--color-primary);
+    position: fixed;
+    right: 1rem;
+    top:53%;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 1rem;
 }
 
 /* General Styles */
@@ -121,6 +130,9 @@ img{
     section{
         margin-top: 6rem;
     }
+    #hash{
+        visibility: hidden;
+    }
 }
 
 /* media query for small devices */
@@ -130,5 +142,8 @@ img{
     }
     section>h2{
         margin-bottom: 2rem;
+    }
+    #hash{
+        visibility: hidden;
     }
 }
