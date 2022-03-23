@@ -11,6 +11,7 @@ import { useState } from 'react'
 const Nav = () => {
   const [activeNow,setActiveNow] = useState('#')
   const [data,setData] = useState(0)
+
   const po = ()=>{
     var temp = document.getElementById('header')
     var temp1 = document.getElementById('about')
@@ -18,38 +19,26 @@ const Nav = () => {
     var temp3 = document.getElementById('services')
     var temp4 = document.getElementById('portfolio')
     var temp5 = document.getElementById('contact')
-    const position = temp.getBoundingClientRect().height
-    const position1 = temp1.getBoundingClientRect().height
-    const position2 = temp2.getBoundingClientRect().height
-    const position3 = temp3.getBoundingClientRect().height
-    const position4 = temp4.getBoundingClientRect().height
-    const position5 = temp5.getBoundingClientRect().height
-    let a = position+position1;
-    let b = a+position2;
-    let c = b+position3;
-    let d = c+position4;
-    let e = d+position5;
-    
-    // console.log(position)
-    // console.log(position1)
-    // console.log(position2)
-    // console.log(position3)
-    // console.log(position4)
-    // console.log(position5)
-    
+
+    const position = temp.offsetTop-128
+    const position1 = temp1.offsetTop-128
+    const position2 = temp2.offsetTop-128
+    const position3 = temp3.offsetTop-128
+    const position4 = temp4.offsetTop-128
+    const position5 = temp5.offsetTop-128
+
     let y = window.pageYOffset
     setData(y)
-    // console.log(data)
-    console.log(y)
-    if(y>=0&&y<position){
+
+    if(y>=0&&y<position1){
       return setActiveNow("#")
-    }else if(y>position&&y<a){
+    }else if(y>position1&&y<position2){
       return setActiveNow("#about")
-    }else if(y>a&&y<b){
+    }else if(y>position2&&y<position3){
       return setActiveNow("#experience")
-    }else if(y>b&&y<c){
+    }else if(y>position3&&y<position4){
       return setActiveNow("#services")
-    }else if(y>c&&y<d){
+    }else if(y>position4&&y<position5){
       return setActiveNow("#portfolio")
     }else{
       return setActiveNow("#contact")
