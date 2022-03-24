@@ -10,83 +10,17 @@ const Services = () => {
       <div className="container services_container">
         <article className='service'>
           <div className="service_head">
-            <h3>UI/UX</h3>
+            <h3>Design</h3>            
           </div>
-          <ul className='service_list'>
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-          </ul>
+          <p className='description'>Design the best layout for the users.</p>
         </article>
         {/* web development */}
         <article className='service'>
           <div className="service_head">
             <h3>Web Development</h3>
           </div>
-          <ul className='service_list'>
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>  
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li> 
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>         
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-          </ul>
-        </article>
-        {/* content creattion */}
-        <article className='service'>
-          <div className="service_head">
-            <h3>UI/UX</h3>
-          </div>
-          <ul className='service_list'>
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet sdfssdf elit.</p>
-            </li>          
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-            <li>
-              <BiCheck className='service_list_icon'/>
-              <p>Lorem ipsum dolor, sit amet  elit.</p>
-            </li>          
-          </ul>
-        </article>
+          <p className='description'>I am a frontend developer.</p>
+        </article>        
       </div>
     </section>
   )

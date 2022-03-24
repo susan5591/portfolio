@@ -17,9 +17,9 @@ const Footer = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div className="footer_socials">
-        <a href="https://facebook.com"><FaFacebookF/></a>
-        <a href="https://instagram.com"><FiInstagram/></a>
-        <a href="https://twitter.com"><IoLogoTwitter/></a>
+        <a href="https://www.facebook.com/susan.dangol.10/"><FaFacebookF/></a>
+        <a href="https://www.instagram.com/susan_dangol/"><FiInstagram/></a>
+        <a href="https://twitter.com/susan5591448"><IoLogoTwitter/></a>
       </div>
     </footer>
   )

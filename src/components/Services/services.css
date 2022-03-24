@@ -1,6 +1,6 @@
 .services_container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
 }
 .service{
@@ -44,14 +44,16 @@
 
 }
 
-.service_list p{
-    font-size: 0.9rem;
+.service p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 /* media query for medium devices */
 @media screen and (max-width:1024px) {
     .services_container{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
     .service{
@@ -62,7 +64,6 @@
 /* media query for small devices */
 @media screen and (max-width:600px) {
     .services_container{
-        display: grid;
         grid-template-columns: 1fr ;
         gap: 1.5rem;
     }

@@ -13,36 +13,31 @@ const Portfolio = () => {
       id:1,
       image:IMG1,
       title: 'Simple Movie Website',
-      github:'https://github.com/susan5591',
-      demo: 'https://github.com/susan5591'
+      github:'https://github.com/susan5591/Simple-Movie-Web',
     },
     {
       id:2,
       image:IMG2,
       title: 'Multi-User To-Do List',
-      github:'https://github.com/susan5591',
-      demo: 'https://github.com/susan5591'
+      github:'https://github.com/susan5591/Multi-user-todo',
     },
     {
       id:3,
       image:IMG3,
       title: 'To-Do List using react',
-      github:'https://github.com/susan5591',
-      demo: 'https://github.com/susan5591'
+      github:'https://github.com/susan5591/Todo-React',
     },
     {
       id:4,
       image:IMG4,
       title: 'Online Birth Certificate',
-      github:'https://github.com/susan5591',
-      demo: 'https://github.com/susan5591'
+      github:'https://github.com/susan5591/E-Governance-Project',
     },
     {
       id:5,
       image:IMG5,
       title: 'Online Liscense Regestration',
-      github:'https://github.com/susan5591',
-      demo: 'https://github.com/susan5591'
+      github:'https://github.com/susan5591/E-Governance-Project',
     }
   ]
   return (
@@ -59,8 +54,7 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className='portfolio_items_cta'>
-                  <a href={github} className='btn' target='_blank'>Github</a>
-                  <a href={demo} className='btn btn-primary'>Live Demo</a>
+                  <a href={github} className='btn btn-primary' target='_blank'>Github</a>
                 </div>
             </article>
             )

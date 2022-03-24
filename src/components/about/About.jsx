@@ -10,7 +10,7 @@ const About = () => {
     <section id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
-      
+
       <div className="container about_container">
         <div className="about_me">
           <img src={ME} alt="about image" />
@@ -20,26 +20,24 @@ const About = () => {
             <article className="about_card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
-            </article>
-            <article className="about_card">
-              <FiUsers className="about_icon" />
-              <h5>Clients</h5>
-              <small>2 Worldwide</small>
+              <small>Less than a year</small>
             </article>
             <article className="about_card">
               <VscFolderLibrary className="about_icon" />
               <h5>Projects</h5>
-              <small>10+ Projects</small>
-            </article>            
+              <small>College Projects</small>
+            </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
-            quos, cumque, omnis natus corrupti facilis cupiditate suscipit
-            accusamus obcaecati maxime modi! Aliquid distinctio repellendus
-            nulla ex sequi incidunt repudiandae architecto!
+            I am Motivated to creative web development dedicated to building and
+            optimizing of user-friendly websites. Web development with a passion
+            for web application, a hunger for knowledge and dedicated to driving
+            innovation with the ability to follow industry and technologies
+            trend and easy adaptation of the modernization.
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
