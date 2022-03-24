@@ -11,28 +11,21 @@ import { useState } from 'react'
 const Nav = () => {
   const [activeNow,setActiveNow] = useState('#header')
   const [data,setData] = useState(0)
-
+  
   const po = ()=>{
     let y = window.pageYOffset        
     setData(y)
     const arr = ['portfolio','header','about','experience','services','contact']
     let position =  arr.map((item)=>{
-      let of=document.getElementById(item).offsetTop
-      let t=document.getElementById(item).getBoundingClientRect().height
-      return(
-        {
-          of:of,
-          h:of+t,
-          item
-        }
-      )
-    })
-
-    for(let i=0;i<position.length;i++){
-      if((y>=position[i].of)&&y<=(position[i].h)){
-        return setActiveNow('#'+position[i].item)
+      let of=document.getElementById(item).offsetTop      
+      let t=document.getElementById(item).getBoundingClientRect().height      
+      let he = of+t
+      if((y>=of)&&(y<he)){
+        setActiveNow('#'+item)
+        return item
       }
-    }
+      return item
+    })
   }
   useEffect(()=>{   
     window.addEventListener('scroll',po)
