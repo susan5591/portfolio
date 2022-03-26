@@ -12,14 +12,14 @@ const Services = () => {
           <div className="service_head">
             <h3>Design</h3>            
           </div>
-          <p className='description'>Design the best layout for the users.</p>
+          <div className='description'>Design the best layout for the users.</div>
         </article>
         {/* web development */}
         <article className='service'>
           <div className="service_head">
             <h3>Web Development</h3>
           </div>
-          <p className='description'>I am a frontend developer.</p>
+          <div className='description'>I am a frontend developer.</div>
         </article>        
       </div>
     </section>
