@@ -20,7 +20,7 @@ const Nav = () => {
       let of=document.getElementById(item).offsetTop      
       let t=document.getElementById(item).getBoundingClientRect().height      
       let he = of+t
-      if((y>=of)&&(y<he)){
+      if((y>=of-64)&&(y<he)){
         setActiveNow('#'+item)
         return item
       }
