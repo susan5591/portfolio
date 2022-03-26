@@ -16,7 +16,7 @@ const Nav = () => {
     let y = window.pageYOffset        
     setData(y)
     const arr = ['portfolio','header','about','experience','services','contact']
-    let position =  arr.map((item)=>{
+    arr.map((item)=>{
       let of=document.getElementById(item).offsetTop      
       let t=document.getElementById(item).getBoundingClientRect().height      
       let he = of+t
