@@ -29,11 +29,17 @@ const About = () => {
             </article>
           </div>
           <p>
-            I am Motivated to creative web development dedicated to building and
-            optimizing of user-friendly websites. Web development with a passion
-            for web application, a hunger for knowledge and dedicated to driving
-            innovation with the ability to follow industry and technologies
-            trend and easy adaptation of the modernization.
+            I’m a tech enthusiast and striving to become a better developer than
+            I am today by honing my programming, managing, designing and leading
+            skills.With a motivation of making optimized and user-friendly
+            websites, I have been carrying on my journey. I have always wanted
+            to expand my work experience along with my career path.
+            <br/>
+            <br/>
+            There is always change in technologies trend, but adapting in such 
+            situation has been one of my ability. Challenges are the things that
+            drives me to do my best and solving the problems brings the smile in 
+            my face. These are the things that helps me to be a finer developer.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
