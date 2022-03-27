@@ -31,7 +31,7 @@ const About = () => {
           <p>
             I’m a tech enthusiast and striving to become a better developer than
             I am today by honing my programming, managing, designing and leading
-            skills.With a motivation of making optimized and user-friendly
+            skills. With a motivation of making optimized and user-friendly
             websites, I have been carrying on my journey. I have always wanted
             to expand my work experience along with my career path.
             <br/>
