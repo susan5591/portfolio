@@ -68,11 +68,43 @@ header{
 
 /* media query for small devices */
 @media screen and (max-width:600px) {
-    .header{
+    header{
         height: 100vh;
+        padding-top: 6rem;
     }
+    
     .header_social,
     .scroll_down{
         display: none;
     }
+    .header_container h1{
+        font-size: 1.5rem;
+    }
+
+    .cta{
+        margin-top: 4rem;
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+    }
+    .me img{
+        margin-top: 2rem;
+    }
+    
+}
+@media screen and (max-width:399px){
+    header{
+        margin: auto;
+        height: 100vh;
+        padding-top: 2rem;
+    }
+
+    .me img{
+        margin-top: 0.5rem;
+        position: absolute;
+        left: calc(50% - 11rem);
+        border-radius: 12rem 12rem 0 0;    
+        overflow: hidden;
+    }
+    
 }
